@@ -1,0 +1,29 @@
+{
+  "name": "srms-desktop",
+  "productName": "SRMS",
+  "version": "1.0.0",
+  "description": "سامانه مدیریت منابع سرباز — Soldier Resource Management System",
+  "author": {
+    "name": "SRMS",
+    "email": "support@srms.local"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "dist": "node scripts/make-dist.mjs",
+    "dist:portable": "node scripts/make-dist.mjs --portable",
+    "dist:dir": "node scripts/make-dist.mjs --dir",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "pg": "8.20.0",
+    "@electric-sql/pglite": "^0.2.17",
+    "@electric-sql/pglite-socket": "^0.0.9"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  }
+}
